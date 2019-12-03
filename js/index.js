@@ -42,7 +42,12 @@ selectStart.addEventListener("selectstart", ()=>{
 })//5.select start
 
 
-//6.
+const keypress = document.querySelector("body");
+window.addEventListener("keypress", () =>{
+    keypress.style.backgroundColor = "orange";
+})
+
+//6.keypress
 
 
 const scroll = document.querySelector(".main-navigation");
@@ -60,7 +65,12 @@ pointerEnter.addEventListener("pointerenter", () =>{
  //8. pointer enter
 
 
-const pointerLeave = document.querySelector("")//9.pointerleave
+const contextMenu = document.querySelector(".footer");
+contextMenu.addEventListener("contextmenu", (e) =>{
+e.preventDefault();
+contextMenu.style.fontFamily = "Indie Flower, cursive";
+})
+//9.contextmenu (in footer)
 
 
 const wheel = document.querySelector(".content-pick");
