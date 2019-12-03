@@ -41,6 +41,7 @@ selectStart.addEventListener("selectstart", ()=>{
     selectStart.style.backgroundColor= "pink";
 })//5.select start
 
+
 //6.
 
 
@@ -51,12 +52,18 @@ const scroll = document.querySelector(".main-navigation");
  //7.scroll
 
 
+const pointerEnter = document.querySelector(".img-content");
+pointerEnter.addEventListener("pointerenter", () =>{
+    pointerEnter.style.transform = "rotate(180deg)";
+    pointerEnter.style.transition = "2.2s"
+})
+ //8. pointer enter
+
+
+const pointerLeave = document.querySelector("")//9.pointerleave
+
 
 const wheel = document.querySelector(".content-pick");
 wheel.addEventListener("wheel", ()=> {
     wheel.style.backgroundColor = "purple";
-})
-//9.wheel
-
-
-//10.
+})//10.wheel
