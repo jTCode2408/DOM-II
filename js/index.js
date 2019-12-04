@@ -80,9 +80,15 @@ wheel.addEventListener("wheel", ()=> {
 
 
 
-const inverseContent = document.querySelector(".content-section");
+const inverseContent = document.querySelector("body");
 inverseContent.addEventListener("click", () =>{
-    inverseContent.style.backgroundColor = "papayawhip";
+    inverseContent.style.backgroundColor = "yellow";
+})
+
+const text = document.querySelector(".content-section");
+text.addEventListener("click", () =>{
+    text.style.backgroundColor = "green";
+    event.stopPropagation();
 })
 //stop propagation
 
