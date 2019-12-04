@@ -77,3 +77,17 @@ const wheel = document.querySelector(".content-pick");
 wheel.addEventListener("wheel", ()=> {
     wheel.style.backgroundColor = "purple";
 })//10.wheel
+
+
+
+const inverseContent = document.querySelector(".content-section");
+inverseContent.addEventListener("click", () =>{
+    inverseContent.style.backgroundColor = "papayawhip";
+})
+//stop propagation
+
+
+const prevent = document.querySelector(".nav-link");
+prevent.addEventListener("click", (event) => {
+    event.preventDefault();
+})//prevent default
